@@ -5,12 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Personal Potfolio</title>
+    <title>Responsive Personal Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -36,6 +45,7 @@
     <!-- home section design -->
     <section class="home show-animate" id="home">
         <div class="home-content">
+            <img src="images/IMG_20240604_141637.jpg" alt="Profile Image" class="profile-image">
             <h1>Hi, I'm <span>Churchill Abing</span><span class="animate" style="--i:2;"></span></h1>
             <div class="text-animate">
                 <h3>Learning Programming</h3>
@@ -192,7 +202,7 @@
                         </div>
 
                         <div class="progress">
-                            <h3>Python <span>10%</span></h3>
+                            <h3>Python <span>20%</span></h3>
                             <div class="bar"><span></span></div>
                         </div>
                     </div>
@@ -202,32 +212,32 @@
             </div>
 
             <div class="skills-column">
-                <h3 class="title">Professional Skills<span class="animate scroll" style="--i:5;"></span></h3>
+                <h3 class="title">Professional Skills<span class="animate scroll" style="--i:4;"></span></h3>
 
                 <div class="skills-box">
                     <div class="skills-content">
                         <div class="progress">
-                            <h3>Web Design <span>10%</span></h3>
+                            <h3>Communicating <span>40%</span></h3>
                             <div class="bar"><span></span></div>
                         </div>
 
                         <div class="progress">
-                            <h3>Web Development <span>10%</span></h3>
+                            <h3>Marketing <span>50%</span></h3>
                             <div class="bar"><span></span></div>
                         </div>
 
                         <div class="progress">
-                            <h3>Graphic Design <span>0%</span></h3>
+                            <h3>Designing <span>30%</span></h3>
                             <div class="bar"><span></span></div>
                         </div>
 
                         <div class="progress">
-                            <h3>SEO Marketing <span>0%</span></h3>
+                            <h3>Business <span>70%</span></h3>
                             <div class="bar"><span></span></div>
                         </div>
                     </div>
 
-                    <span class="animate scroll" style="--i:6;"></span>
+                    <span class="animate scroll" style="--i:5;"></span>
                 </div>
             </div>
         </div>
@@ -238,65 +248,60 @@
         <h2 class="heading">Contact <span>Me</span><span class="animate scroll" style="--i:1;"></span></h2>
 
         <form action="#">
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="text" placeholder="Churchill Abing" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="churchillabing200@gmail.com" required>
-                    <span class="focus"></span>
-                </div>
+            <div class="form-box">
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="text" name="Churchill Abing" required>
+                        <label>Name</label>
+                    </div>
 
-                <span class="animate scroll" style="--i:3;"></span>
-            </div>
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="number" placeholder="+63 09814746590" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
-                    <span class="focus"></span>
+                    <div class="input-field">
+                        <input type="email" name="churchillabing200@gmail.com" required>
+                        <label>Email</label>
+                    </div>
                 </div>
 
-                <span class="animate scroll" style="--i:5;"></span>
-            </div>
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="number" name="+63 09814746590" required>
+                        <label>Phone</label>
+                    </div>
 
-            <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                <span class="focus"></span>
+                    <div class="input-field">
+                        <input type="text" name="" required>
+                        <label>Subject</label>
+                    </div>
+                </div>
 
-                <span class="animate scroll" style="--i:7;"></span>
-            </div>
+                <div class="input-field">
+                    <textarea name="" id="" cols="30" rows="10" required></textarea>
+                    <label>Message</label>
+                </div>
 
-            <div class="btn-box btns">
-                <button type="submit" class="btn">Submit</button>
-
-                <span class="animate scroll" style="--i:9;"></span>
+                <div class="btn-box btns">
+                    <button class="btn">Submit</button>
+                    <span class="animate scroll" style="--i:2;"></span>
+                </div>
             </div>
         </form>
     </section>
 
-    <!-- footer design -->
+    <!-- footer section design -->
     <footer class="footer">
         <div class="footer-text">
-            <p>Copyright &copy; 2024 | Designed and
-                Maintenance by Churchill Abing| All
-                Rights Reserved</p>
-
-            <span class="animate scroll" style="--i:1;"></span>
+            <p>Copyright @ 2023-2024 by Churchill</p>
         </div>
 
         <div class="footer-iconTop">
-            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
-
-            <span class="animate scroll" style="--i:3;"></span>
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
     </footer>
 
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
+    <!-- link to js -->
     <script src="script.js"></script>
 </body>
 
-                                                 </html>
+</html>
